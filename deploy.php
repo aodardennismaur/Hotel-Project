@@ -9,6 +9,7 @@
     // array of commands
     $commands = array(
         'echo $PWD',
+        'exit',
         'sudo su',
         'git pull origin master',
         'git status',
