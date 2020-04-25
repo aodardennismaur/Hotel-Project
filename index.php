@@ -5,5 +5,6 @@
     <h1>Hola Mundo cruel ... te saluda un Desarrollador ...</h1>
     <h2>Se desarrollara el proyecto Hoteles para el curso de Tecnologias Web</h2>
     <h3>La primera en renegar sera Rut ... y dira ... esque eres muyyy intenso</h3>
+    <h4>A las 2 am se subiran fotos para las pruebas de compativilidad</h4>
 </body>
 </html>
