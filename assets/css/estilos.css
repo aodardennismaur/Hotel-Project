@@ -1,0 +1,17 @@
+.res__contall {
+  background: lightgray;
+}
+
+.res-titulo__p {
+  font-family: LucidaGrande-Bold;
+  font-size: 18px;
+  color: #000000;
+  margin: 0rem;
+}
+
+.res-subtitulo__p {
+  font-family: LucidaGrande;
+  font-size: 10px;
+  color: #000000;
+  margin: 0rem;
+}
