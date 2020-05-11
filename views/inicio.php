@@ -237,11 +237,21 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="container">
-            
+
+    <footer>
+        <div class="container-fluid bg-primary">
+            <div class="container pt-3">
+                <div class="row justify-content-between">
+                    <div class="col-4">
+                        <img src="../assets/img/logo-com-sm.svg" alt="">
+                    </div>
+                    <div class="col-4">
+                        <p class="text-white footer-caja__p">Todos los derechos reservados</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </footer>
 
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
