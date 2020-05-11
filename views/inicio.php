@@ -100,21 +100,146 @@
                 <p class="res-subtitulo__p">Estas habitaciones tenemos disponibles en las fechas seleccionadas</p>
             </div>
         </div>
-        <div class="card-deck">
-            <div class="card border border-success">
-                <img src="../assets/img/cuarto1.svg" class="card-img-top rounded-circle">
-                <div class="card-body">
-                    <h5 class="card-title">Habitacion Simple (Individual Estandar)</h5>
-                    <p class="card-text">Servicios Integrados</p>
+        <div class="container py-3">
+            <div class="row mb-3 no-gutters border border-success rounded d-sm-none">
+                <div class="col-4">
+                    <img src="../assets/img/cuarto1.svg" class="card-img">
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Habitacion Simple (Individual)</h5>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="../assets/img/cuarto2.svg" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">Habitacion Doble Matrimonial</h5>
-                    <p class="card-text">Servicios Integrados</p>
+            <div class="row mb-3 no-gutters border border-light rounded d-sm-none">
+                <div class="col-4">
+                    <img src="../assets/img/cuarto2.svg" class="card-img">
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Habitacion Matrimonial</h5>
+                    </div>
                 </div>
             </div>
+            <div class="row mb-3 no-gutters border border-light rounded d-sm-none">
+                <div class="col-4">
+                    <img src="../assets/img/cuarto3.svg" class="card-img">
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Habitacion Triple</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-none d-sm-flex">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <img src="../assets/img/cuarto1.svg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Habitacion Simple (Individual)</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <img src="../assets/img/cuarto2.svg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Habitacion Matrimonial</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <img src="../assets/img/cuarto3.svg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Habitacion Triple</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid res__contall">
+        <div class="container py-3">
+            <div class="row ml-sm-1 ml-md-0">
+                <p class="res-titulo__p">Reserva tu habitacion</p>
+            </div>
+            <div class="row ml-sm-1 ml-md-0">
+                <p class="res-subtitulo__p">Selecciona los dias que deseas reservar y la cantidad de personas que ocuparan la habitacion</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-12">
+                    <div class="card">
+                        <h5 class="card-header bg-primary text-white">Datos Personales</h5>
+                        <div class="card-body">
+                            <form>
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <label class="mr-sm-2 sr-only" for="tipodoc">Tipo Documento</label>
+                                        <select class="custom-select mr-sm-2" id="tipodoc">
+                                            <option selected>Tipo Documento</option>
+                                            <option value="1">Dni</option>
+                                            <option value="2">Passport</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" placeholder="Numero de documento">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" placeholder="Nombres Completos">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" placeholder="Correo electronico">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col-12">
+                    <div class="card">
+                        <h5 class="card-header text-black bg-warning">Metodo de pago</h5>
+                        <div class="card-body">
+                            <form>
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" id="rb-efectivo" value="Efectivo">
+                                            <label class="form-check-label" for="rb-efectivo">Efectivo</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" id="rb-efectivo" value="Tarjeta Credito">
+                                            <label class="form-check-label" for="rb-efectivo">Tarjeta Credito</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" placeholder="Tarjeta de Credito">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-3">
+                <div class="col-4">
+                    <button type="button" class="btn btn-success">Siguiente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container">
+            
         </div>
     </div>
 
