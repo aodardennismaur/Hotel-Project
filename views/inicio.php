@@ -6,13 +6,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel BuenaVentura</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="../assets/css/estilos.css">
 </head>
 
 <body>
+    <header class="bg-primary">
+        <div class="container">
+            <div class="row py-2 text-center">
+                <div class="col-3">
+                    <a href="#"><img src="../assets/img/logo-sm.svg"></a>
+                </div>
+                <div class="col-6">
+                    <h6 class="pt-2 text-white font-weight-bolder">Hotel BuenaVentura</h6>
+                </div>
+                <div class="col-3">
+                    <a href=""><img src="../assets/img/login-sm.svg"></a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <div class="container-fluid bg-primary">
+
+    <section style="background: lightgrey">
+        <div class="container py-3">
+            <h5 class="m-0">Reservar Habitacion</h5>
+            <p class="m-0"><small>Selecciona los dias que deseas reservar y la cantidad de personas que ocuparan la habitacion</small></p>
+        </div>
+        <div class="container">
+            <form>
+                <div class="form-row py-2">
+                    <div class="col-12">
+                        <label class="sr-only" for="validationDefault04">State</label>
+                        <select class="custom-select" id="validationDefault04" required>
+                            <option selected>Fechas</option>
+                            <option>Inicio</option>
+                            <option>Fin</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row py-2">
+                    <div class="col-12">
+                        <label class="sr-only" for="validationDefault04">State</label>
+                        <select class="custom-select" id="validationDefault04" required>
+                            <option selected>Habitacion</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row py-2">
+                    <div class="col-3">
+                        <button class="btn btn-primary" type="submit"><img src="../assets/img/search.svg"></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section>
+        <div class="container py-3">
+            <h5 class="m-0">Seleccionar el tipo de habitacion</h5>
+            <p class="m-0"><small>Estas habitaciones tenemos disponibles en las fechas seleccionadas</small></p>
+        </div>
+        <div class="container">
+            <div class="row mb-2 no-gutters border border-success rounded">
+                <div class="col-4">
+                    <img src="../assets/img/cuarto1.svg" class="card-img">
+                </div>
+                <div class="col-8 py-1 px-2">
+                    <h6>Habitacion Simple (Individual)</h6>
+                    <p><small>Servicios Integrados</small></p>
+                </div>
+            </div>
+            <div class="row mb-2 no-gutters border border-gray rounded">
+                <div class="col-4">
+                    <img src="../assets/img/cuarto2.svg" class="card-img">
+                </div>
+                <div class="col-8 py-1 px-2">
+                    <h6>Habitacion Matrimonial</h6>
+                    <p><small>Servicios Integrados</small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background: lightgrey">
+        <div class="container py-3">
+            <h5 class="m-0">Datos Personales</h5>
+            <p class="m-0"><small>Ingresar los datos personales de la persona que va a reservar la(s) habitaciones</small></p>
+        </div>
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <div class="card">
+                        <h6 class="card-header bg-primary text-white">Datos Personales</h6>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-row mb-3">
+                                    <div class="col-12">
+                                        <label class="sr-only" for="tipodoc">Tipo Documento</label>
+                                        <select class="custom-select" id="tipodoc">
+                                            <option selected>Tipo Documento</option>
+                                            <option value="1">Dni</option>
+                                            <option value="2">Passport</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row mb-3">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" placeholder="Numero de documento">
+                                    </div>
+                                </div>
+                                <div class="form-row mb-3">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" placeholder="Nombres Completos">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" placeholder="Correo electronico">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12">
+                    <div class="card">
+                        <h6 class="card-header bg-primary text-white">Metodo de Pago</h6>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-row mb-3">
+                                    <div class="col-12">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" id="rb-efectivo" value="Efectivo">
+                                            <label class="form-check-label" for="rb-efectivo">Efectivo</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" id="rb-efectivo" value="Tarjeta Credito">
+                                            <label class="form-check-label" for="rb-efectivo">Tarjeta Credito</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" placeholder="Tarjeta de Credito">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-2">
+                <div class="col-3">
+                    <button type="button" class="btn btn-primary">Siguiente</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container bg-primary">
+            <div class="row py-2" >
+                <div class="col-6 my-auto">
+                    <img src="../assets/img/logo-sm.svg" alt="">
+                </div>
+                <div class="col-6">
+                    <p class="text-white footer__text">Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- <div class="container-fluid bg-primary">
         <div class="row text-center py-2 py-sm-2 py-md-3 justify-content-md-between">
             <div class="col-3 col-sm-2 col-md-3">
                 <a href="#" class="d-md-none"><img src="../assets/img/logo-sm.svg"></a>
@@ -251,7 +422,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
