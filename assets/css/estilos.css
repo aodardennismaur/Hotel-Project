@@ -1,27 +1,8 @@
-.res__contall {
-  background: lightgray;
+html, body {
+  font-family: 'Open Sans', sans-serif;
 }
 
-.res-titulo__p {
-  font-family: LucidaGrande-Bold;
-  font-size: 18px;
-  color: #000000;
-  margin: 0rem;
-}
-
-.res-subtitulo__p {
-  font-family: LucidaGrande;
-  font-size: 10px;
-  color: #000000;
-  margin: 0rem;
-}
-
-.hab-menu__p {
-  font-family: LucidaGrande;
-  font-size: 14px;
-  color: #000000;
-}
-
-.footer-caja__p {
-  font-size: 10px;
+.footer__text {
+  text-align: end;
+  font-size: x-small;
 }
