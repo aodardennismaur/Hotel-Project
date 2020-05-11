@@ -28,18 +28,20 @@
         </div>
     </div>
 
-    <div class="container-fluid res__contall d-block d-sm-none">
-        <div class="container">
-            <div class="row py-3">
+    <div class="container-fluid res__contall">
+        <div class="container py-3">
+            <div class="row ml-sm-1 ml-md-0">
                 <p class="res-titulo__p">Reserva tu habitacion</p>
-                <p class="mt-0 res-subtitulo__p">Selecciona los dias que deseas reservar y la cantidad de personas que ocuparan la habitacion</p>
+            </div>
+            <div class="row ml-sm-1 ml-md-0">
+                <p class="res-subtitulo__p">Selecciona los dias que deseas reservar y la cantidad de personas que ocuparan la habitacion</p>
             </div>
         </div>
-        <form class="pb-3">
-            <div class="form-row">
-                <div class="col-8">
+        <form>
+            <div class="form-row pb-2 pb-sm-2 justify-content-md-between">
+                <div class="col-8 col-sm-8 col-md-5">
                     <label class="mr-sm-2 sr-only" for="fecha">Calendario</label>
-                    <div class="input-group">
+                    <div class="input-group ml-sm-4 ml-md-4">
                         <div class="input-group-prepend">
                             <div class="input-group-text"><img src="../assets/img/calendar.svg" alt=""></div>
                         </div>
@@ -50,11 +52,27 @@
                         </select>
                     </div>
                 </div>
+                <div class="col-md-5 d-none d-md-block">
+                    <label class="mr-sm-2 sr-only" for="fecha">Calendario</label>
+                    <div class="input-group ml-sm-5 ml-md-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text"><img src="../assets/img/calendar.svg" alt=""></div>
+                        </div>
+                        <select class="custom-select mr-sm-2" id="fecha">
+                            <option selected>Calendario</option>
+                            <option value="1">Llegada</option>
+                            <option value="2">Salida</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-1 mr-md-3 bg-primary text-center d-none d-md-block">
+                    <a href="#"><img src="../assets/img/search.svg"></a>
+                </div>
             </div>
-            <div class="form-row justify-content-between">
-                <div class="col-8">
+            <div class="form-row pb-2 pb-sm-2 justify-content-between justify-content-sm-between d-md-none">
+                <div class="col-8 col-sm-8">
                     <label class="mr-sm-2 sr-only" for="habitacion">Habitacion</label>
-                    <div class="input-group">
+                    <div class="input-group ml-sm-4">
                         <div class="input-group-prepend">
                             <div class="input-group-text"><img src="../assets/img/user.svg" alt=""></div>
                         </div>
@@ -66,11 +84,38 @@
                         </select>
                     </div>
                 </div>
-                <div class="col-3 text-center bg-primary py-1">
+                <div class="col-3 col-sm-2 mr-sm-4 pb-2 pb-sm-2 bg-primary text-center">
                     <a href="#"><img src="../assets/img/search.svg"></a>
                 </div>
             </div>
         </form>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container py-3">
+            <div class="row ml-sm-1">
+                <p class="res-titulo__p">Seleccionar el tipo de habitacion</p>
+            </div>
+            <div class="row ml-sm-1">
+                <p class="res-subtitulo__p">Estas habitaciones tenemos disponibles en las fechas seleccionadas</p>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card border border-success">
+                <img src="../assets/img/cuarto1.svg" class="card-img-top rounded-circle">
+                <div class="card-body">
+                    <h5 class="card-title">Habitacion Simple (Individual Estandar)</h5>
+                    <p class="card-text">Servicios Integrados</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/img/cuarto2.svg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Habitacion Doble Matrimonial</h5>
+                    <p class="card-text">Servicios Integrados</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- JavaScript -->
