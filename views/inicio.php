@@ -13,16 +13,18 @@
 
 <body>
     <header class="bg-primary">
-        <div class="container">
-            <div class="row py-2 text-center">
-                <div class="col-3">
-                    <a href="#"><img src="../assets/img/logo-sm.svg"></a>
+        <div class="container container-md">
+            <div class="row py-2 text-center justify-content-md-between">
+                <div class="col-3 col-md-5 text-md-left pl-md-0">
+                    <a href="#" class="d-md-none"><img src="../assets/img/logo-sm.svg"></a>
+                    <a href="#" class="d-none d-md-block"><img src="../assets/img/logo-md.svg"></a>
                 </div>
-                <div class="col-6">
+                <div class="col-6 d-md-none">
                     <h6 class="pt-2 text-white font-weight-bolder">Hotel BuenaVentura</h6>
                 </div>
-                <div class="col-3">
-                    <a href=""><img src="../assets/img/login-sm.svg"></a>
+                <div class="col-3 col-md-3 text-md-right pr-md-0">
+                    <a href="#" class="d-md-none"><img src="../assets/img/login-sm.svg"></a>
+                    <a href="#" class="d-none d-md-block"><img src="../assets/img/login-md.svg"></a>
                 </div>
             </div>
         </div>
@@ -30,14 +32,14 @@
 
 
     <section style="background: lightgrey">
-        <div class="container py-3">
+        <div class="container py-3 container-md pl-md-0">
             <h5 class="m-0">Reservar Habitacion</h5>
             <p class="m-0"><small>Selecciona los dias que deseas reservar y la cantidad de personas que ocuparan la habitacion</small></p>
         </div>
-        <div class="container">
+        <div class="container container-md px-md-0">
             <form>
-                <div class="form-row py-2">
-                    <div class="col-12">
+                <div class="form-row py-2 py-md-0 pb-md-3">
+                    <div class="col-12 col-md-5 d-flex px-md-0">
                         <label class="sr-only" for="validationDefault04">State</label>
                         <select class="custom-select" id="validationDefault04" required>
                             <option selected>Fechas</option>
@@ -45,8 +47,20 @@
                             <option>Fin</option>
                         </select>
                     </div>
+                    <div class="col-12 col-md-5 d-none d-md-flex px-md-0">
+                        <label class="sr-only" for="validationDefault04">State</label>
+                        <select class="custom-select" id="validationDefault04" required>
+                            <option selected>Habitacion</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-2 d-none d-md-flex justify-content-md-center">
+                        <a href="#" class="btn btn-primary">Buscar</a>
+                    </div>
                 </div>
-                <div class="form-row py-2">
+                <div class="form-row py-2 d-md-none">
                     <div class="col-12">
                         <label class="sr-only" for="validationDefault04">State</label>
                         <select class="custom-select" id="validationDefault04" required>
@@ -57,7 +71,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="form-row py-2">
+                <div class="form-row py-2 d-md-none">
                     <div class="col-3">
                         <button class="btn btn-primary" type="submit"><img src="../assets/img/search.svg"></button>
                     </div>
@@ -66,13 +80,42 @@
         </div>
     </section>
     <section>
-        <div class="container py-3">
+        <div class="container py-3 container-md pl-md-0">
             <h5 class="m-0">Seleccionar el tipo de habitacion</h5>
             <p class="m-0"><small>Estas habitaciones tenemos disponibles en las fechas seleccionadas</small></p>
         </div>
-        <div class="container">
-            <div class="row mb-2 no-gutters border border-success rounded">
-                <div class="col-4">
+        <div class="container container-md px-md-0">
+            <div class="row d-none d-md-flex pb-md-3">
+                <div class="col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="../assets/img/cuarto1.svg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Habitacion Simple (Individual)</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="../assets/img/cuarto1.svg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Matrimonial</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="../assets/img/cuarto1.svg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Matrimonial</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-md-none mb-2 no-gutters border border-success rounded">
+                <div class="col-4 col-md-4">
                     <img src="../assets/img/cuarto1.svg" class="card-img">
                 </div>
                 <div class="col-8 py-1 px-2">
@@ -80,7 +123,7 @@
                     <p><small>Servicios Integrados</small></p>
                 </div>
             </div>
-            <div class="row mb-2 no-gutters border border-gray rounded">
+            <div class="row d-md-none mb-2 no-gutters border border-gray rounded">
                 <div class="col-4">
                     <img src="../assets/img/cuarto2.svg" class="card-img">
                 </div>
@@ -92,13 +135,13 @@
         </div>
     </section>
     <section style="background: lightgrey">
-        <div class="container py-3">
+        <div class="container py-3 container-md pl-md-0">
             <h5 class="m-0">Datos Personales</h5>
             <p class="m-0"><small>Ingresar los datos personales de la persona que va a reservar la(s) habitaciones</small></p>
         </div>
         <div class="container">
             <div class="row mb-3">
-                <div class="col-12">
+                <div class="col-12 col-md-7">
                     <div class="card">
                         <h6 class="card-header bg-primary text-white">Datos Personales</h6>
                         <div class="card-body">
@@ -132,9 +175,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col-12">
+                <div class="col-12 col-md-5">
                     <div class="card">
                         <h6 class="card-header bg-primary text-white">Metodo de Pago</h6>
                         <div class="card-body">
@@ -161,17 +202,20 @@
                     </div>
                 </div>
             </div>
-            <div class="row pb-2">
-                <div class="col-3">
+            <!-- <div class="row mb-3">
+                
+            </div> -->
+            <div class="row pb-2 d-md-flex justify-content-md-end">
+                <div class="col-3 col-md-2">
                     <button type="button" class="btn btn-primary">Siguiente</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container bg-primary">
-            <div class="row py-2" >
+    <footer class="bg-primary">
+        <div class="container">
+            <div class="row py-2">
                 <div class="col-6 my-auto">
                     <img src="../assets/img/logo-sm.svg" alt="">
                 </div>
