@@ -55,7 +55,7 @@
                             <option>3</option>
                         </select>
                     </div>
-                    <div class="col-12 col-md-2 justify-content-md-center">
+                    <div class="col-4 col-sm-4 col-md-2 justify-content-md-center">
                         <a href="#" class="btn btn-primary d-block d-md-none"><img src="../assets/img/search.svg"></a>
                         <a href="#" class="btn btn-primary d-none d-md-block">Buscar</a>
                     </div>
