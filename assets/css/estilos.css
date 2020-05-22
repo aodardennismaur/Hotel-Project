@@ -1,8 +1,12 @@
-html, body {
-  font-family: 'Open Sans', sans-serif;
+.parallax{
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid red;
 }
 
-.footer__text {
-  text-align: end;
-  font-size: x-small;
+#seccion1{
+  background-image: url('../img/hotel.jpg');
 }
