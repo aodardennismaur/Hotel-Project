@@ -1,3 +1,3 @@
 <?php
 
-header("Location: views/cuarto.html");
+header("Location: views/evento.html");
