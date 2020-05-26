@@ -1,12 +1,28 @@
+#seccion1{
+  background-image: url('../img/caratula.jpg');
+}
+
+#seccion2{
+  background-image: url('../img/caratula3.jpg');
+}
+
+.text-blanco{
+  color: #D8D8D8;
+}
+
+.text-rojo{
+  color: #800000;
+}
+
+.btn-red{
+  background: #800000;
+}
+
 .parallax{
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 2px solid red;
 }
 
-#seccion1{
-  background-image: url('../img/hotel.jpg');
-}

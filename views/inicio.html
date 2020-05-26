@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="../assets/css/jquery.datetimepicker.min.css">
+  <link rel="stylesheet" href="../assets/css/estilos.css">
 </head>
 
 <body>
@@ -28,21 +29,24 @@
 
       <div class="collapse navbar-collapse justify-content-md-center justify-content-lg-between"
         id="navbarSupportedContent">
-        <ul class="navbar-nav mr-lg-auto">
+        <ul id="menu" class="navbar-nav mr-lg-auto">
           <li class="nav-item active">
             <a class="nav-link" href="inicio.html">Inicio</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="cuarto.html">Cuartos</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="evento.html">Eventos</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="nosotros.html">Nosotros</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="contacto.html">Contactanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
           </li>
         </ul>
         <form class="form-inline d-none d-lg-flex">
@@ -53,12 +57,12 @@
     </nav>
   </header>
 
-  <section>
+  <div id="seccion1" class="d-flex align-items-center parallax">
     <div class="container">
-      <div class="row d-flex justify-content-center align-items-lg-center py-3">
+      <div class="row d-flex justify-content-center align-items-center align-items-lg-center py-3">
         <div class="col-7 col-sm-7 col-md-6 text-center mb-3 mb-md-0 pt-md-3 align-items-lg-center">
-          <h4>Mensaje de bienvenida del hotel</h4>
-          <button type="button" class="btn btn-outline-danger">Nuestros cuartos</button>
+          <h4 class="text-blanco">Mensaje de bienvenida del hotel</h4>
+          <a href="cuarto.html" role="button" class="btn text-white btn-red">Nuestros cuartos</a>
         </div>
         <div class="col-12 col-sm-10 col-md-6">
           <form>
@@ -73,44 +77,44 @@
                 <input type="text" class="form-control" id="inputEmail4" placeholder="Adultos - Niños">
               </div>
               <div class="col-12 d-flex justify-content-end">
-                <button type="button" class="btn btn-outline-danger">Buscar</button>
+                <button type="button" class="btn btn-red text-white">Buscar</button>
               </div>
             </div>
           </form>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section>
+  <div class="d-flex align-items-center mt-5">
     <div class="container mb-4 mb-md-0 my-md-4">
       <div class="row d-flex justify-content-center">
         <div class="col-12 col-md-6 col-lg-5 text-center">
-          <h4 style="color: #064C64;">Lorem Ipsum</h3>
+          <h2 class="text-rojo">Lorem Ipsum</h2>
             <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
               Ipsum has been the
               industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
               scrambled it to make a type specimen book</p>
         </div>
         <div class="col-8 col-md-6 col-lg-5 text-center">
-          <img src="../assets/img/img-descp-sm.svg" class="card-img">
+          <img src="../assets/img/caratula1.jpg" class="card-img">
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section>
-    <div class="container mb-3">
+  <div id="seccion2" class="d-flex align-items-center parallax">
+    <div class="container">
       <div class="row mb-3">
         <div class="col-12 text-center">
-          <h4 style="color: #6FBF01;">Servicios del hotel</h4>
+          <h4 class="text-rojo">Servicios del hotel</h4>
         </div>
       </div>
       <div class="row d-flex justify-content-center">
         <div class="col-12 col-sm-10 col-md-6 pl-lg-3 mb-3">
           <div class="row no-gutters">
             <div class="col-4">
-              <img src="../assets/img/card-image-sm.svg" class="card-img">
+              <img src="../assets/img/evento2.jpg" class="card-img">
             </div>
             <div class="col-8 text-center py-1 border border-left-0" style="border-color: #6FBF01 !important;">
               <h5 class="card-title" style="font-size: 16px;">Lorem Ipsum</h5>
@@ -125,14 +129,14 @@
               <p style="font-size: 10px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
             <div class="col-4">
-              <img src="../assets/img/card-image-sm.svg" class="card-img">
+              <img src="../assets/img/evento3.jpg" class="card-img">
             </div>
           </div>
         </div>
         <div class="col-12 col-sm-10 col-md-6 pl-lg-3 mb-3">
           <div class="row no-gutters">
             <div class="col-4">
-              <img src="../assets/img/card-image-sm.svg" class="card-img">
+              <img src="../assets/img/evento4.jpg" class="card-img">
             </div>
             <div class="col-8 text-center py-1 border border-left-0" style="border-color: #6FBF01 !important;">
               <h5 class="card-title" style="font-size: 16px;">Lorem Ipsum</h5>
@@ -147,13 +151,13 @@
               <p style="font-size: 10px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
             <div class="col-4">
-              <img src="../assets/img/card-image-sm.svg" class="card-img">
+              <img src="../assets/img/evento5.jpg" class="card-img">
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
   <footer style="background: #800000;">
     <div class="container pt-2 pb-1">
@@ -179,24 +183,8 @@
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
   <script src="../assets/js/jquery.datetimepicker.full.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('#fechaEntrada').datetimepicker({
-        timepicker: false,
-        format: 'd/m/Y',
-        minDate: 0
-      });
-      $('#fechaSalida').datetimepicker({
-        timepicker: false,
-        format: 'd/m/Y',
-        onShow: function () {
-          this.setOptions({
-            minDate: $('#fechaEntrada').val()
-          })
-        }
-      });
-    });
-  </script>
+
+  <script src="../assets/js/accion.js"></script>
 
 </body>
 
