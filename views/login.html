@@ -14,10 +14,10 @@
     <script>
         window.fbAsyncInit = function () {
             FB.init({
-                appId: '{your-app-id}',
+                appId: '945312639249175',
                 cookie: true,
                 xfbml: true,
-                version: '{api-version}'
+                version: 'v7.0'
             });
 
             FB.AppEvents.logPageView();
@@ -53,10 +53,10 @@
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
                     </div> -->
-
+                    <button type="submit" class="btn btn-primary">Ingresar</button>
+                    <div id="fb-root"></div>
                     <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
                     </fb:login-button>
-                    <button type="submit" class="btn btn-primary">Ingresar</button>
                 </form>
             </div>
         </div>
@@ -71,19 +71,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+    <!-- Facebook sdk JS -->
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=945312639249175&autoLogAppEvents=1"></script>
     <script>
         $(document).ready(function () {
             FB.getLoginStatus(function (response) {
                 console.info('alert 1: ' + response);
                 statusChangeCallback(response);
             });
-
-            function checkLoginState() {
-                FB.getLoginStatus(function (response) {
-                    console.info('alet 2:' + response);
-                    statusChangeCallback(response);
-                });
-            }
         });
 
         function validateEmail(email) {
@@ -91,6 +88,32 @@
             alert(re.test(email));
             return re.test(email);
         }
+
+        function checkLoginState() {
+            FB.getLoginStatus(function (response) {
+                console.info('alet 2:' + response);
+                statusChangeCallback(response);
+            });
+        }
+
+        function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
+            console.log('statusChangeCallback');
+            console.log(response);                   // The current login status of the person.
+            if (response.status === 'connected') {   // Logged into your webpage and Facebook.
+                testAPI();
+            } else {                                 // Not logged into your webpage or we are unable to tell.
+                document.getElementById('status').innerHTML = 'Please log ' +
+                    'into this webpage.';
+            }
+        }
+
+        function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
+            console.log('Welcome!  Fetching your information.... ');
+            FB.api('/me', function (response) {
+                console.log('Successful login for: ' + response.name);
+                document.getElementById('status').innerHTML =
+                    'Thanks for logging in, ' + response.name + '!';
+            });
     </script>
 </body>
 
