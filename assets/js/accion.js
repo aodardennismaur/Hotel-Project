@@ -101,13 +101,21 @@ $('#login').submit(function (e) {
             url: '../controller/sesion.controller.php',
             data: $(this).serialize(),
             success: function (data) {
-                swal({
-                    title: 'Existo',
-                    text: 'Bienvenido al sistema: ' + data.usuario,
-                    icon: 'success',
-                    button: 'OK'
-                });
-                console.info(data);
+                if (data) {
+                    swal({
+                        title: 'Existo',
+                        text: 'Bienvenido al sistema: ' + data.usuario,
+                        icon: 'success',
+                        button: 'OK'
+                    });
+                }else{
+                    swal({
+                        title: 'Error',
+                        text: 'El usuario ingresado no existe',
+                        icon: 'error',
+                        button: 'OK'
+                    });
+                }
             },
             error: function (er) {
                 swal({
