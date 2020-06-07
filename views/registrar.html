@@ -1,32 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hotel Rubi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/estilos.css">
+    <link rel="stylesheet" href="../assets/css/registrar.css">
 </head>
 
-<body class="d-flex flex-column align-items-center justify-content-center" style="height: 100vh; width: 100vw;">
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="col-12 col-md-7">
-                <form id="login">
+<body>
+    <div class="container-fluid px-0">
+        <div class="row no-gutters">
+            <div class="col-6 img-caratula"></div>
+            <div class="col-6 d-flex flex-column justify-content-center">
+                <h1 class="mx-3 ">Registrar Usuario</h1>
+                <form id="registro" class="mx-5 mt-5">
                     <div class="form-group">
-                        <label for="correo">Correo Electronico</label>
-                        <input type="text" class="form-control" id="correo" name="correo">
+                        <label for="correoRegistro">Correo Electronico</label>
+                        <input type="email" class="form-control" id="correoRegistro" name="correoRegistro">
                     </div>
                     <div class="form-group">
-                        <label for="clave">Contraseña</label>
-                        <input type="password" class="form-control" id="clave" name="clave">
+                        <label for="claveRegistro">Contraseña</label>
+                        <input type="password" class="form-control" id="claveRegistro" name="claveRegistro">
                     </div>
-                    <div class="d-flex justify-content-between">
-                        <button type="submit" class="btn btn-primary">Ingresar</button>
-                        <button id="register" type="button" class="btn btn-primary">Registrar Usuario</button>
-                    </div>
+                    <button type="submit" class="btn btn-primary">Registrar</button>
                 </form>
             </div>
         </div>
