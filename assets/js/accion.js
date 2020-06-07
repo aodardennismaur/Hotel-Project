@@ -107,13 +107,19 @@ $('#login').submit(function (e) {
                         text: 'Bienvenido al sistema: ' + data.usuario,
                         icon: 'success',
                         button: 'OK'
+                    }).then(function () {
+                        $('#correo').val('');
+                        $('#clave').val('');
                     });
-                }else{
+                } else {
                     swal({
                         title: 'Error',
                         text: 'El usuario ingresado no existe',
                         icon: 'error',
                         button: 'OK'
+                    }).then(function () {
+                        $('#correo').val('');
+                        $('#clave').val('');
                     });
                 }
             },
