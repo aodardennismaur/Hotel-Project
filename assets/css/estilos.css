@@ -6,6 +6,10 @@
   background-image: url('../img/caratula3.jpg');
 }
 
+#login1{
+  background-image: url('../img/fondo.jpg');
+}
+
 .text-blanco{
   color: #D8D8D8;
 }
