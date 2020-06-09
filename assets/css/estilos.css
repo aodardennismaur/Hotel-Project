@@ -1,3 +1,20 @@
+html, body{
+  min-height: 100vh;
+}
+
+.fix-footer{
+  background: #800000;
+  margin-top: auto;
+}
+
+.color-rojo{
+  background: #800000;
+}
+
+.borde{
+  border: 2px solid red;
+}
+
 #seccion1{
   background-image: url('../img/caratula.jpg');
 }
