@@ -18,7 +18,7 @@ class Correo {
             $mail->Host       = 'smtp.mailgun.org';                    // Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
             $mail->Username   = 'postmaster@hoteltecweb.xyz';                     // SMTP username
-            $mail->Password   = '38016ca798db585c93059ac13d0221d2-8b34de1b-8e61de40';                               // SMTP password
+            $mail->Password   = '4b209febf7239bb7a4e8106607ac4832-8b34de1b-83989f8b';                               // SMTP password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
             $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
         
