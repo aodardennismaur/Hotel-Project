@@ -32,7 +32,6 @@ $('#contactanosMensaje').submit(function (e) {
         return;
     }
 
-
     swal({
         title: "Advertencia",
         text: "¿Seguro que desea enviar el mensaje?",
@@ -64,19 +63,17 @@ $('#contactanosMensaje').submit(function (e) {
                 $('#mensaje').val('');
             },
             error: function (er) {
-                swal.hideLoading()
                 swal({
                     title: 'Error',
                     text: 'error con el servidor: ' + er.status,
                     icon: 'error',
                     button: 'OK'
                 });
-                console.info(er);
             }
         });
     }).catch(err => {
         if (err) {
-            swal("Oh noes!", "The AJAX request failed!", "error");
+            swal("Oh!!!!", "Sucedio un problema al lado del servidor", "error");
         } else {
             swal.stopLoading();
             swal.close();
@@ -114,6 +111,7 @@ $('#registro').submit(function (e) {
                     icon: 'success',
                     button: 'OK'
                 }).then(function () {
+                    console.info(data)
                     $('#correoRegistro').val('');
                     $('#claveRegistro').val('');
                     window.location = '../views/login.html';
