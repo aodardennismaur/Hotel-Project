@@ -63,19 +63,18 @@
                 <p class="text-justify">Puede estar seguro de la atención más rápida y personal con cualquier consulta.</p>
             </div>
             <div class="col-12 col-md-9 col-lg-6">
-                <form>
+                <form id="contactanosMensaje">
                     <div class="form-row">
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombres">
+                        <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Nombres">
                     </div>
                     <div class="form-row my-3">
-                        <input type="email" class="form-control" id="exampleInputEmail1"
-                            placeholder="Correo Electronico">
+                        <input type="text" class="form-control" id="correo" name="correo" placeholder="Correo Electronico">
                     </div>
                     <div class="form-row my-3">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Escriba su mensaje"></textarea>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Escriba su mensaje"></textarea>
                     </div>
                     <div class="form-row d-flex flex-column align-items-end">
-                        <button type="button" class="btn btn-outline-danger">Enviar</button>
+                        <button type="submit" class="btn btn-outline-danger">Enviar</button>
                     </div>
                 </form>
             </div>
@@ -95,15 +94,19 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        crossorigin="anonymous"></script> -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+    <script src="../assets/js/accion.js"></script>
 </body>
 
 </html>

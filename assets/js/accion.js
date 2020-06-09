@@ -15,6 +15,75 @@ $(document).ready(function () {
     // });
 });
 
+$('#contactanosMensaje').submit(function (e) {
+    e.preventDefault();
+    var nombres = $('#nombres').val();
+    var correo = $('#correo').val();
+    var mensaje = $('#mensaje').val();
+
+    if (nombres === '' || correo === '' || mensaje === '') {
+        swal({
+            title: 'Error',
+            text: 'Alguno de los campos se encuentra vacio',
+            icon: 'error',
+            buttons: false,
+            timer: 2000
+        });
+        return;
+    }
+
+
+    swal({
+        title: "Advertencia",
+        text: "¿Seguro que desea enviar el mensaje?",
+        icon: "warning",
+        button: {
+            text: "OK",
+            closeModal: false
+        }
+    }).then(value => {
+        if (!value) throw null;
+
+        if (!validateEmail(correo)) {
+            return swal("Formato del correo no es correcto");
+        }
+
+        $.ajax({
+            type: "POST",
+            url: '../controller/correo.controller.php',
+            data: $(this).serialize(),
+            success: function (data) {
+                swal({
+                    title: 'Existo',
+                    text: data,
+                    icon: 'success',
+                    button: 'OK'
+                });
+                $('#nombres').val('');
+                $('#correo').val('');
+                $('#mensaje').val('');
+            },
+            error: function (er) {
+                swal.hideLoading()
+                swal({
+                    title: 'Error',
+                    text: 'error con el servidor: ' + er.status,
+                    icon: 'error',
+                    button: 'OK'
+                });
+                console.info(er);
+            }
+        });
+    }).catch(err => {
+        if (err) {
+            swal("Oh noes!", "The AJAX request failed!", "error");
+        } else {
+            swal.stopLoading();
+            swal.close();
+        }
+    });
+});
+
 $('#registro').submit(function (e) {
     e.preventDefault();
     var correo = $('#correoRegistro').val();
