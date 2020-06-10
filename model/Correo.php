@@ -28,7 +28,7 @@ class Correo {
             $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
         
             //Recipients
-            $mail->setFrom($resp[2]['valor'], 'Administrador');
+            $mail->setFrom('admin@hoteltecweb.xyz', 'Administrador');
             $mail->addAddress($correo, $nombre);     // Add a recipient
 
             // Content
