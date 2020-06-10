@@ -5,12 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel Rubi</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/estilos.css">
 </head>
 
-<body>
+<body class="d-flex flex-column">
     <header>
         <div class="container d-none d-md-block my-md-2">
             <div class="row d-flex justify-content-md-center">
@@ -47,7 +46,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login.html">Login</a>
-                      </li>
+                    </li>
                 </ul>
                 <form class="form-inline d-none d-lg-flex">
                     <p class="my-lg-1 mr-lg-4">955-908-370</p>
@@ -57,158 +56,135 @@
         </nav>
     </header>
 
-    <section class="my-3">
-        <div class="container">
-            <div class="row mb-3">
-                <div class="col-12 text-center">
-                    <h4>HABITACIONES</h4>
-                </div>
+    <div class="container-fluid">
+        <div class="row my-3 mx-1 mx-md-4">
+            <div class="col-12 text-center">
+                <h4>HABITACIONES</h4>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <p>Nuestras Habitaciones</p>
-                </div>
+            <div class="col-12">
+                <p>Nuestras Habitaciones</p>
             </div>
-            <div class="w-100" style="border: 1px solid black;"></div>
-            <div class="row my-3">
-                <div class="col-12">
-                    <form>
-                        <div class="form-row d-flex justify-content-lg-center">
-                            <div class="col-12 col-md-6 col-lg-auto mb-md-3 mb-lg-0">
-                                <input type="text" class="form-control" id="inputEmail4" placeholder="Entrada" readonly>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-auto py-2 py-md-0">
-                                <input type="text" class="form-control" id="inputEmail4" placeholder="Salida" readonly>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-auto mb-md-3 mb-lg-0">
-                                <input type="text" class="form-control" id="inputEmail4" placeholder="Adultos" readonly>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-auto py-2 py-md-0">
-                                <input type="text" class="form-control" id="inputEmail4" placeholder="Niños" readonly>
-                            </div>
-                            <div class="col-12 col-lg-auto d-flex justify-content-end justify-content-lg-start">
-                                <button type="button" class="btn btn-outline-danger w-100">Buscar</button>
-                            </div>
-                        </div>
-                    </form>
+            <div class="w-100 separador"></div>
+            <form class="col-12 my-3 d-flex justify-content-center">
+                <div class="form-row d-flex justify-content-lg-center">
+                    <div class="col-12 col-md-6 col-lg-auto mb-md-3 mb-lg-0">
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Entrada" readonly>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-auto py-2 py-md-0">
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Salida" readonly>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-auto mb-md-3 mb-lg-0">
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Adultos" readonly>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-auto py-2 py-md-0">
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Niños" readonly>
+                    </div>
+                    <div class="col-12 col-lg-auto d-flex justify-content-end justify-content-lg-start">
+                        <button type="button" class="btn btn-outline-danger w-100">Buscar</button>
+                    </div>
                 </div>
-            </div>
-            <div class="w-100" style="border: 1px solid black;"></div>
+            </form>
+            <div class="w-100 separador"></div>
         </div>
-    </section>
 
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-4 mb-2 mb-md-0">
-                    <img src="../assets/img/cuarto.jpg" class="card-img-top">
-                </div>
-                <div class="col-12 col-md-8">
-                    <div class="row">
-                        <div class="col-9">
-                            <p>Suite Matrimonial</p>
-                            <p><small>Nuestra Suite Matrimonial cuenta con espaciosas, confortables y modernas habitaciones de 48 m2 
-                                 cama de matrimonio (King size), acceso gratuito a Internet (WiFi) de alta velocidad,  escritorio con silla
-                                  caja fuerte, un completo cuarto de baño con bañera o tina.</p>
+    </div>
 
-                                <p>Vista: Exterior</p> 
-                                
-                                <p>Cama: 01 king size; cuenta con una frazada térmica y edredón de plumas.</p>
-                                
-                                <p>Capacidad máxima: 2 personas</p>
-                                
-                                <p>Cuna Extra: Se permite una cuna adicional</small></p>
-                            </p>
-                            <p><small> La Junior Suite tiene una cama de matrimonio (queensize), un cómodo sofá instalado
-                                en el rincón de la habitación, 2 sillas y una mesita de centro,Televisor de 40'' Smart TV,
-                                Servicio gratuito de café Nespresso y té en la habitación,Set de planchado,Aire acondicionado,
-                                Espejo de maquillaje iluminado,Secador.
-                            </small>
-                            </p>
-
-                        </div>
-                        <div class="col-3 text-center">
-                            <p class="mb-0 mt-3 mt-sm-2"><small>Desde</small></p>
-                            <p>S/. 250</p>
-                            <a href="" class="text-center text-white d-flex justify-content-center">
-                                <p class="px-1" style="font-size: 10px; background: black;">
-                                    Mas Informacion
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+    <div class="container-fluid px-5">
+        <div class="row">
+            <div class="col-12 col-md-4 d-flex align-items-center px-0">
+                <img src="../assets/img/cuarto.jpg" class="card-img-top">
             </div>
-            <div class="w-100 my-3" style="border: 1px solid black;"></div>
-            <div class="row">
-                <div class="col-12 col-md-4 mb-2 mb-md-0">
-                    <img src="../assets/img/cuarto1.jpeg" class="card-img-top">
-                </div>
-                <div class="col-12 col-md-8">
-                    <div class="row">
-                        <div class="col-9">
-                            <p>Suite Junior</p>
-                            <p><small>Nuestra suite junior cuenta con los siguiente:
-                            <p>Vista: Exterior e Interior </p>
-                            <p> Cama: 01 King Size o queen size
-                            <p> Cuenta con una frazada térmica y edredón de plumas.</p>
-                            <p> Capacidad máxima: 2 personas</p>    
-                            <p> Cuna Extra:  Se permite una cuna adicional</p>
-                            </small>
-                            </p>
-                        </div>
-                        <div class="col-3 text-center">
-                            <p class="mb-0 mt-3 mt-sm-2"><small>Desde</small></p>
-                            <p>S/. 150</p>
-                            <a href="" class="text-center text-white d-flex justify-content-center">
-                                <p class="px-1" style="font-size: 10px; background: black;">
-                                    Mas Informacion
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="w-100 my-3" style="border: 1px solid black;"></div>
-            <div class="row">
-                <div class="col-12 col-md-4 mb-2 mb-md-0">
-                    <img src="../assets/img/cuarto2.jpeg" class="card-img-top">
-                </div>
-                <div class="col-12 col-md-8">
-                    <div class="row">
-                        <div class="col-9">
-                            <p>Junior Suite</p>
-                            <p><small>Las espaciosas Junior Suites, equipadas con todos los lujos, están ubicadas en el último piso del hotel Rubí. 
-                                La Junior Suite tiene un diseño contemporáneo y es generosa en dimensiones (30m2).</small>
-                            </p>
+            <div class="col-12 col-md-6">
+                <p>Suite Matrimonial</p>
+                <p class="text-justify"><small>Nuestra Suite Matrimonial cuenta con espaciosas, confortables y modernas
+                        habitaciones de 48 m2
+                        cama de matrimonio (King size), acceso gratuito a Internet (WiFi) de alta velocidad,
+                        escritorio con silla
+                        caja fuerte, un completo cuarto de baño con bañera o tina.
+                    </small></p>
 
-                            <p><small>Wifi de banda ancha gratuito.</small></p>
-                            <p><small> Televisor de 40” Smart TV </small></p>
-                            <p><small>Base para iPod</small></p>
-                            <p><small> Caja segura</small></p>
-                            <p><small> Aire acondicionado</small></p>
-                            <p><small> Servicio gratuito de café Nespresso y té en la habitación </small></p>
-                            <p><small> Ducha con chorro lluvia con productos gratuitos de la línea de The Guest Love</small></p>
-                            <p><small> Nevera</small></p>
-                        </p>
-                        </div>
-                        <div class="col-3 text-center">
-                            <p class="mb-0 mt-3 mt-sm-2"><small>Desde</small></p>
-                            <p>S/. 180</p>
-                            <a href="" class="text-center text-white d-flex justify-content-center">
-                                <p class="px-1" style="font-size: 10px; background: black;">
-                                    Mas Informacion
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <p class="mb-0"><strong>Vista:</strong> Exterior</p>
+                <p class="mb-0"><strong>Cama:</strong> 01 king size; cuenta con una frazada térmica y edredón de plumas.
+                </p>
+                <p class="mb-0"><strong>Capacidad máxima:</strong> 2 personas</p>
+                <p><strong>Cuna Extra:</strong> Se permite una cuna adicional</small></p>
+                <p class="text-justify"><small> La Junior Suite tiene una cama de matrimonio (queensize), un cómodo sofá
+                        instalado
+                        en el rincón de la habitación, 2 sillas y una mesita de centro,Televisor de 40''
+                        Smart TV,
+                        Servicio gratuito de café Nespresso y té en la habitación,Set de planchado,Aire
+                        acondicionado,
+                        Espejo de maquillaje iluminado,Secador.
+                    </small>
+                </p>
+
             </div>
-            <div class="w-100 my-3" style="border: 1px solid black;"></div>
+            <div class="col-12 col-md-2 d-flex flex-column justify-content-center align-items-center">
+                <p class="mb-0"><small>Desde</small></p>
+                <p class="mb-0">S/. 250</p>
+                <a href="#" class="mt-2 bg-dark">
+                    <p class="text-white mb-0 px-2 text-center">Mas <br> Informacion</p>
+                </a>
+            </div>
         </div>
-    </section>
+        <div class="w-100 my-3 separador"></div>
+        <div class="row">
+            <div class="col-12 col-md-4 d-flex align-items-center px-0">
+                <img src="../assets/img/cuarto1.jpeg" class="card-img-top">
+            </div>
+            <div class="col-12 col-md-6">
+                <p>Suite Junior</p>
+                <p><small>Nuestra suite junior cuenta con los siguiente:
+                        <p>Vista: Exterior e Interior </p>
+                        <p> Cama: 01 King Size o queen size
+                        <p> Cuenta con una frazada térmica y edredón de plumas.</p>
+                        <p> Capacidad máxima: 2 personas</p>
+                        <p> Cuna Extra: Se permite una cuna adicional</p>
+                    </small>
+                </p>
+            </div>
+            <div class="col-12 col-md-2 d-flex flex-column justify-content-center align-items-center">
+                <p class="mb-0"><small>Desde</small></p>
+                <p class="mb-0">S/. 150</p>
+                <a href="#" class="mt-2 bg-dark">
+                    <p class="text-white mb-0 px-2 text-center">Mas <br> Informacion</p>
+                </a>
+            </div>
+        </div>
+        <div class="w-100 my-3 separador"></div>
+        <div class="row">
+            <div class="col-12 col-md-4 d-flex align-items-center px-0">
+                <img src="../assets/img/cuarto2.jpeg" class="card-img-top">
+            </div>
+            <div class="col-12 col-md-6">
+                <p>Junior Suite</p>
+                <p class="text-justify"><small>Las espaciosas Junior Suites, equipadas con todos los lujos, están ubicadas en el
+                        último piso del hotel Rubí.
+                        La Junior Suite tiene un diseño contemporáneo y es generosa en dimensiones
+                        (30m2).
+                </small></p>
 
-    <footer style="background: #800000;">
+                <p class="mb-0"><small>Wifi de banda ancha gratuito.</small></p>
+                <p class="mb-0"><small>Televisor de 40” Smart TV</small></p>
+                <p class="mb-0"><small>Base para iPod</small></p>
+                <p class="mb-0"><small>Caja segura</small></p>
+                <p class="mb-0"><small>Aire acondicionado</small></p>
+                <p class="mb-0"><small>Servicio gratuito de café Nespresso y té en la habitación</small></p>
+                <p class="mb-0"><small> Ducha con chorro lluvia con productos gratuitos de la línea de The Guest Love</small></p>
+                <p><small> Nevera</small></p>
+            </div>
+            <div class="col-12 col-md-2 d-flex flex-column justify-content-center align-items-center">
+                <p class="mb-0"><small>Desde</small></p>
+                <p class="mb-0">S/. 180</p>
+                <a href="#" class="mt-2 bg-dark">
+                    <p class="text-white mb-0 px-2 text-center">Mas <br> Informacion</p>
+                </a>
+            </div>
+        </div>
+        <div class="w-100 my-3 separador"></div>
+    </div>
+
+    <footer class="fix-footer">
         <div class="container pt-2 pb-1">
             <div class="row">
                 <div class="col-8 d-flex align-items-end">
@@ -221,15 +197,8 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>
