@@ -5,12 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel Rubi</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/estilos.css">
 </head>
 
-<body>
+<body class="d-flex flex-column">
     <header>
         <div class="container d-none d-md-block my-md-2">
             <div class="row d-flex justify-content-md-center">
@@ -47,7 +46,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login.html">Login</a>
-                      </li>
+                    </li>
                 </ul>
                 <form class="form-inline d-none d-lg-flex">
                     <p class="my-lg-1 mr-lg-4">955-908-370</p>
@@ -57,69 +56,60 @@
         </nav>
     </header>
 
-    <section>
-        <div class="container">
-            <div class="row d-flex justify-content-center">
+    <div class="container-fluid my-auto">
+        <div class="row">
+            <div class="col-12 my-4 text-center">
                 <h4>DINING & EVENTS</h4>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-6 py-2">
-                    <div class="row">
-                        <div class="col-12 mb-3">
-                          <img src="../assets/img/evento1.png" class="card-img-top">  
-                        </div>
-                        <div class="col-12 text-center">
-                            <h5 class="mb-0">LA MISSION RESTAURANT & BAR</h5>
-                            <h6>“La noche es testigo de la diversión”</h6>
-                            <p><small>Blu Bar</small></p>
-                            <div class="mb-5"></div>
-                            <p class="mb-0">Horario de Atención:</p>
-                            <p><small>Mon - Sun 11:30am -11:00pm</small></p>
-                            <div class="mb-3"></div>
-                            <p class="mb-0">Show Musical en vivo:</p>
-                            <p><small>Mon - Sun 11:00pm</small></p>
-                            <p>Un entorno tranquilo, acogedor y lujoso dotado de la máxima privacidad y exclusividad para una experiencia única e inolvidable.
-                            <p><small> Ventura Unos buenos tragos y piqueos al lado de una espectacular vista a la piscina es el plan perfecto que te ofrece Blu Bar.
-                             No te puedes perder nuestros show musicales de los fines de semana y las promociones especiales.</small></p>
-                            </p>
-                            <p class="mb-0">Reservas:</p>
-                            <p><small> (074) 228172 – anexo 230: Celular: 993 501 500  </small></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 py-2">
-                    <div class="row">
-                        <div class="col-12 mb-3">
-                          <img src="../assets/img/evento6.jpeg" class="card-img-top">  
-                        </div>
-                        <div class="col-12 text-center">
-                            <h5 class="mb-0">CASINO & DIVERSIÓN</h5>
-                            <h6>“La noche es testigo de la diversión”</h6>
-                            <p><small>Cassino</small></p>
-                            <p><small></small></p>
-                            <div class="mb-5"></div>
-                            <p class="mb-0">Horario de Atención:</p>
-                            <p><small>Mon - Sun 11:30am -11:00pm</small></p>
-                            <div class="mb-3"></div>
-                            <p class="mb-0">Bingo:</p>
-                            <p><small>Mon - Sun 11:30am -11:00pm</small></p>
-                            <p>Ofrece y pone a disposición de sus visitantes una amplia gama de atracciones,
-                                 entre máquinas slots, mesas de juego, espectáculos y mucho más. Lo invitamos a compartir 
-                                agradables momentos junto a nosotros, en un cálido y cómodo ambiente, donde encontrará mucha diversión.</p>
-                            <p class="mb-0">Tiene a su disposición:</p>
-                            <p><small> 300 máquinas de juegos de azar</small></p>
-                            <p><small> 3 ruletas electrónicas</small></p>
-                            <p><small> 3 mesas de póker Texas hold em</small></p>
-                            <p><small> 1 mesa de póker caribeño</small></p>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+                <img src="../assets/img/evento1.png" class="card-img-top">
+                <h5 class="mt-5 mb-0">LA MISSION RESTAURANT & BAR</h5>
+                <h6>“La noche es testigo de la diversión”</h6>
+                <p><small>Blu Bar</small></p>
+                <div class="mb-2"></div>
+                <p class="mb-0">Horario de Atención:</p>
+                <p><small>Mon - Sun 11:30am -11:00pm</small></p>
+                <div class="mb-2"></div>
+                <p class="mb-0">Show Musical en vivo:</p>
+                <p><small>Mon - Sun 11:00pm</small></p>
+                
+                <p class="my-2 text-justify mx-3"><small>
+                        Un entorno tranquilo, acogedor y lujoso dotado de la máxima privacidad y exclusividad para
+                        una experiencia única e inolvidable.
+
+                        Ventura Unos buenos tragos y piqueos al lado de una espectacular vista a la piscina
+                        es el plan perfecto que te ofrece Blu Bar.
+                        No te puedes perder nuestros show musicales de los fines de semana y las promociones
+                        especiales.
+                    </small></p>
+                <p class="mt-5 mb-0">Reservas:</p>
+                <p><small> (074) 228172 – anexo 230: Celular: 993 501 500 </small></p>
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+                <img src="../assets/img/evento6.jpeg" class="card-img-top">
+                <h5 class="mt-5 mb-0">CASINO & DIVERSIÓN</h5>
+                <h6>“La noche es testigo de la diversión”</h6>
+                <p><small>Cassino</small></p>
+                <div class="mt-1"></div>
+                <p class="mb-0">Horario de Atención:</p>
+                <p><small>Mon - Sun 11:30am -11:00pm</small></p>
+                <div class="mb-2"></div>
+                <p class="mb-0">Bingo:</p>
+                <p><small>Mon - Sun 11:30am -11:00pm</small></p>
+                <p class="text-justify mx-3 mt-2"><small>Ofrece y pone a disposición de sus visitantes una amplia gama de atracciones,
+                    entre máquinas slots, mesas de juego, espectáculos y mucho más. Lo invitamos a compartir
+                    agradables momentos junto a nosotros, en un cálido y cómodo ambiente, donde encontrará mucha
+                    diversión.</small></p>
+                <p class="mb-0">Tiene a su disposición:</p>
+                <p class="mb-0"><small> 300 máquinas de juegos de azar</small></p>
+                <p class="mb-0"><small> 3 ruletas electrónicas</small></p>
+                <p class="mb-0"><small> 3 mesas de póker Texas hold em</small></p>
+                <p><small> 1 mesa de póker caribeño</small></p>
             </div>
         </div>
-    </section>
+    </div>
 
-
-    <footer style="background: #800000;">
+    <footer class="fix-footer">
         <div class="container pt-2 pb-1">
             <div class="row">
                 <div class="col-8 d-flex align-items-end">
@@ -131,16 +121,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

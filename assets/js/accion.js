@@ -1,19 +1,36 @@
 $(document).ready(function () {
-    // $('#fechaEntrada').datetimepicker({
-    //     timepicker: false,
-    //     format: 'd/m/Y',
-    //     minDate: 0
-    // });
-    // $('#fechaSalida').datetimepicker({
-    //     timepicker: false,
-    //     format: 'd/m/Y',
-    //     onShow: function () {
-    //         this.setOptions({
-    //             minDate: $('#fechaEntrada').val()
-    //         })
-    //     }
-    // });
+    fechaRango();
 });
+
+$('#reserva').submit(function (e) {
+    e.preventDefault();
+    swal('Existo','Se esta procesando su habitacion','success');
+});
+
+function fechaRango() {
+
+    var entrada = $('#fechaEntrada');
+    var salida = $('#fechaSalida');
+
+    entrada.datepicker({
+        autoHide: true,
+        language: 'es-ES',
+        format: 'dd/mm/yyyy',
+        startDate: new Date()
+    });
+
+    salida.datepicker({
+        autoHide: true,
+        language: 'es-ES',
+        format: 'dd/mm/yyyy',
+        startDate: entrada.datepicker('getDate')
+    });
+
+    entrada.on('change', function () {
+        salida.datepicker('reset');
+        salida.datepicker('setStartDate', entrada.datepicker('getDate'));
+    });
+}
 
 $('#contactanosMensaje').submit(function (e) {
     e.preventDefault();

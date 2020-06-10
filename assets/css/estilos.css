@@ -2,13 +2,13 @@ html, body{
   min-height: 100vh;
 }
 
+.separador{
+  border: 1px solid black;
+}
+
 .fix-footer{
   background: #800000;
   margin-top: auto;
-}
-
-.color-rojo{
-  background: #800000;
 }
 
 .borde{
@@ -45,12 +45,4 @@ html, body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.vc{
-  border-color: #28a745;
-}
-
-.vf{
-  border-color: #dc3545;
 }
