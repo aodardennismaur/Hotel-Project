@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Rubí</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/datepicker.min.css">
+  <link rel="stylesheet" href="../assets/css/estilos.css">
+</head>
+
+<body class="d-flex flex-column">
+  <header>
+    <div class="container d-none d-md-block my-md-2">
+      <div class="row d-flex justify-content-md-center">
+        <div class="col-4 text-center h-100">
+          <img src="../assets/img/logo-md.svg">
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a class="navbar-brand d-block d-md-none" href="inicio.html"><img src="../assets/img/logo-sm.svg"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><img src="../assets/img/icon-menu.svg"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-md-center justify-content-lg-between"
+        id="navbarSupportedContent">
+        <ul id="menu" class="navbar-nav mr-lg-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="inicio.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="habitaciones.html">Habitaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="evento.html">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contactanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+        <form class="form-inline d-none d-lg-flex">
+          <p class="my-lg-1 mr-lg-4">955-908-370</p>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Reservar</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <div id="seccion1" class="d-flex align-items-center parallax">
+    <div class="container">
+      <div class="row d-flex justify-content-center align-items-center align-items-lg-center py-3">
+        <div class="col-7 col-sm-7 col-md-6 text-center mb-3 mb-md-0 pt-md-3 align-items-lg-center">
+          <h4 class="text-blanco">Mensaje de bienvenida del hotel</h4>
+          <a href="habitaciones.html" role="button" class="btn text-white btn-red">Nuestros cuartos</a>
+        </div>
+        <div class="col-12 col-sm-10 col-md-6">
+          <form id="reserva">
+            <div class="form-row py-3 px-3">
+              <div class="col-12 mb-2">
+                <input type="text" class="form-control" id="fechaEntrada" placeholder="Fecha Entrada" readonly>
+              </div>
+              <div class="col-12 mb-2">
+                <input type="text" class="form-control" id="fechaSalida" placeholder="Fecha Salida" readonly>
+              </div>
+              <div class="col-12 mb-2">
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Adultos - Niños">
+              </div>
+              <div class="col-12 d-flex justify-content-end">
+                <button type="submit" class="btn btn-red text-white">Buscar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex align-items-center mt-5">
+    <div class="container mb-4 mb-md-0 my-md-4">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-md-6 col-lg-5 text-center">
+          <h2 class="text-rojo">Apuesto a que te gusta Chiclayo!</h2>
+          <p class="text-justify">
+            Nuestro alojamiento de vacaciones en Rubi ofrece un nido cálido y acogedor para todos los huéspedes,dispone
+            de habitaciones individualmente o en grupo, con la familia o el club, por placer o por negocios, además de
+            su gran salón elegante para el evento de su sueño y un servicio impecable.</p>
+        </div>
+        <div class="col-8 col-md-6 col-lg-5 text-center">
+          <img src="../assets/img/caratula1.jpg" class="card-img">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="seccion2" class="d-flex align-items-center parallax">
+    <div class="container">
+      <div class="row mb-3">
+        <div class="col-12 text-center">
+          <h4 class="text-rojo">Servicios del hotel</h4>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-sm-10 col-md-6 pl-lg-3 mb-3">
+          <div class="row no-gutters">
+            <div class="col-4">
+              <img src="../assets/img/evento2.jpg" class="card-img">
+            </div>
+            <div class="col-8 text-center py-1 border border-left-0" style="border-color: #6FBF01 !important;">
+              <h5 class="card-title" style="font-size: 16px;">Restaurant Rubí</h5>
+              <p style="font-size: 10px;">El ambiente ideal para pasar de un momento de relax con los amigos y familia  disfrutando de un delicioso almuerzo o cena.</p>
+                <P>Atención</p>
+                <p><small>Almuerzo ejecutivo: 12:30 p.m. a 3:00 p.m</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-10 col-md-6 pr-lg-3 mb-3">
+          <div class="row no-gutters">
+            <div class="col-8 text-center py-1 border border-right-0" style="border-color: #6FBF01 !important;">
+              <h5 class="card-title" style="font-size: 16px;">Oppian Rubí</h5>
+              <p style="font-size: 10px;">El salón Oppian le ofrece un amplio espacio para el desarrollo de su evento. Posee una capacidad máxima de 120 personas en armado teatro, ideal para reuniones grandes y conferencias.
+
+              </p>
+            </div>
+            <div class="col-4">
+              <img src="../assets/img/evento3.jpg" class="card-img">
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-10 col-md-6 pl-lg-3 mb-3">
+          <div class="row no-gutters">
+            <div class="col-4">
+              <img src="../assets/img/evento4.jpg" class="card-img">
+            </div>
+            <div class="col-8 text-center py-1 border border-left-0" style="border-color: #6FBF01 !important;">
+              <h5 class="card-title" style="font-size: 16px;">Foyer Rubí</h5>
+              <p style="font-size: 10px;">Espacio ideal para la realización de ferias y exposiciones que requiere la instalación de stands de eventos, coffee breaks, entre otros.
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-10 col-md-6 pr-lg-3">
+          <div class="row no-gutters">
+            <div class="col-8 text-center py-1 border border-right-0" style="border-color: #6FBF01 !important;">
+              <h5 class="card-title" style="font-size: 16px;">Poseidón Rubí</h5>
+              <p style="font-size: 10px;">El salón Poseidón tiene una capacidad máxima de 30 personas en armado banquete.
+                Es el mejor lugar para poder disfrutar de una reunión privada.
+
+              </p>
+            </div>
+            <div class="col-4">
+              <img src="../assets/img/evento5.jpg" class="card-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="fix-footer">
+    <div class="container pt-2 pb-1">
+      <div class="row">
+        <div class="col-8 d-flex align-items-end">
+          <small class="text-white" style="font-size: 10px;">Todo los derechos reservados</small>
+        </div>
+        <div class="col-4 d-flex justify-content-end align-items-end">
+          <img src="../assets/img/prueba.webp" style="width: 20% !important;">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/jquery.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/datepicker.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="../assets/js/accion.js"></script>
+
+</body>
+
+</html>
