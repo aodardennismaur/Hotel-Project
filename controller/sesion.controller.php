@@ -12,8 +12,8 @@ try{
 
     $resultado = $objSesion->inicioSesion($correo, md5($clave));
 
-    echo json_encode($resultado);
+    echo $resultado;
 
 }catch(Exception $ex){  
-    echo $ex-getMessage();
+    echo $ex->getMessage();
 }

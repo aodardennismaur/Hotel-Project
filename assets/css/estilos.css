@@ -11,6 +11,11 @@ html, body{
   margin-top: auto;
 }
 
+.user{
+  width: 16%;
+  height: auto;
+}
+
 .borde{
   border: 2px solid red;
 }

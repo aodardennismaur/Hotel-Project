@@ -10,9 +10,32 @@ class Session extends Conexion {
             $db->bindParam(":p_clave", $clave);
             $db->execute();
             $row = $db->fetch(PDO::FETCH_ASSOC);
-            return $row;
+            if($db->rowCount()){
+                session_start();
+                $_SESSION['correo'] = $row['usuario'];
+                $_SESSION['nombre'] = $row['nombre'];
+                $_SESSION['apellido'] = $row['apellido'];
+                return true;
+            }
+            return false;
         }catch (PDOException $ex){
             echo $ex->getMessage();
         }
+    }
+    public function logged_in(){
+        if(isset($_SESSION['correo'])){
+            return true;
+        }
+    }
+    public function redirect($url){
+        header("Location: $url");
+    }
+
+    public function logout(){
+        session_start();
+        foreach($_SESSION as $key){
+            unset($_SESSION[$key]);
+        }
+        session_destroy();
     }
 }
